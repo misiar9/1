@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-return (
+  const adminUser= {
+    name: "Misiar",
+    password: "admin"
+  }
+ 
+ 
+ 
+  return (
     <div className="App">
-      Hello World
     </div>
   );
 }
