@@ -1,0 +1,19 @@
+.form-inner{
+    background-color:#C7102E;
+    text-align: center;
+    font-size: 25px;
+    font-family:Verdana;
+}
+h3{
+    color:white;
+    font-size:25px;
+}
+#name{
+    width:400px;
+}
+#password{
+    width:400px;
+}
+#submit{
+    width:408px;
+}
