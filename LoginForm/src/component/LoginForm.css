@@ -10,10 +10,13 @@ h3{
 }
 #name{
     width:400px;
+    border-radius: 5px;
 }
 #password{
     width:400px;
+    border-radius: 5px;
 }
 #submit{
     width:408px;
+    border-radius: 5px;
 }

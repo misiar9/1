@@ -5,7 +5,7 @@ import tipico from './component/img/tipico.jpg';
 
 function App() {
   const adminUser = {
-    name: "misiar",
+    name: "admin",
     password: "admin"
   }
 
@@ -36,8 +36,9 @@ function App() {
       {(user.name != "") ? (
         <div className="welcome">
           <img src={tipico} width="500px"></img>
-          <h2>Welcome, <span>{user.name}</span></h2>
-          <button onClick={Logout}>Logout</button>
+          <h2>Welcome, <span className="username">{user.name}</span></h2>
+          <button className="b1">Help</button>
+          <button className="b1" onClick={Logout}>Logout</button>
         </div>
       ) : (<LoginForm Login={Login} error={error} />)}
     </div>

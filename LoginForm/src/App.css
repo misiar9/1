@@ -5,3 +5,9 @@ body {
   text-align:center;
   color:white;
 }
+.b1{
+  width:100px;
+}
+.username{
+  text-decoration: underline;
+}
