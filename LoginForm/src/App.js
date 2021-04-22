@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 import LoginForm from './component/LoginForm';
+import tipico from './component/img/tipico.jpg';
 
 function App() {
   const adminUser = {
-    name: "Misiar",
+    name: "misiar",
     password: "admin"
   }
 
@@ -13,18 +14,30 @@ function App() {
 
   const Login = details => {
     console.log(details);
+
+    if (details.name == adminUser.name && details.password == adminUser.password)
+     { 
+       console.log("Logged in!");
+       setUser({name: details.name});
+     }
+    else
+    {
+      console.log("Incorrect username or password")
+    }
+
   }
   const Logout = () => {
     console.log("Logout");
-
+    setUser({name:""});
   }
 
   return (
     <div className="App">
       {(user.name != "") ? (
         <div className="welcome">
+          <img src={tipico} width="500px"></img>
           <h2>Welcome, <span>{user.name}</span></h2>
-          <button>Logout</button>
+          <button onClick={Logout}>Logout</button>
         </div>
       ) : (<LoginForm Login={Login} error={error} />)}
     </div>
