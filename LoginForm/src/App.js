@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import LoginForm from './component/LoginForm';
-import WelcomePage from './component/WelcomePage'
+import WelcomePage from './WelcomePage'
 import tipico from './component/img/tipico.jpg';
 
 function App() {
