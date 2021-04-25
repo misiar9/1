@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import LoginForm from './component/LoginForm';
+import WelcomePage from './component/WelcomePage'
 import tipico from './component/img/tipico.jpg';
 
 function App() {
@@ -34,12 +35,7 @@ function App() {
   return (
     <div className="App">
       {(user.name != "") ? (
-        <div className="welcome">
-          <img src={tipico} width="500px"></img>
-          <h2>Welcome, <span className="username">{user.name}</span></h2>
-          <button className="b1">Help</button>
-          <button className="b1" onClick={Logout}>Logout</button>
-        </div>
+        <WelcomePage/>
       ) : (<LoginForm Login={Login} error={error} />)}
     </div>
   );
