@@ -1,12 +1,12 @@
 body {
-    background-color:#C7102E;
-  }
-  .welcome{
-    display:block;
-    text-align:center;
-    color:white;
-    width:500px;
-    float:left;
+  background-color:#C7102E;
+  text-align: center;
+}
+.welcome{
+  background-color:#C7102E;
+  text-align: center;
+  font-family:Verdana;
+  color:white;
   }
   .b1{
     width:100px;

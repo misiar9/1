@@ -3,6 +3,7 @@ import './App.css';
 import LoginForm from './component/LoginForm';
 import WelcomePage from './WelcomePage'
 import tipico from './component/img/tipico.jpg';
+import LeftMenu from './component/LeftMenu';
 
 function App() {
   const adminUser = {
