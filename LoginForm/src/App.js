@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       {(user.name != "") ? (
-        <WelcomePage/>
+        <WelcomePage user={user.name} logout={Logout} />
       ) : (<LoginForm Login={Login} error={error} />)}
     </div>
   );
