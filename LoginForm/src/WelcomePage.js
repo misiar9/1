@@ -15,6 +15,7 @@ function WelcomePage(props:Props){
         user,logout
     }=props;
     return(
+        
         <div className="welcome">
         <h3>Tipico Retail Franchisee Portal</h3>
         <img src={tipico} width="500px"></img>
@@ -22,6 +23,7 @@ function WelcomePage(props:Props){
         <button className="b1">Help</button>
         <button className="b1" onClick={logout}>Logout</button>
         </div>
+        
     );
 }
 export default WelcomePage;
