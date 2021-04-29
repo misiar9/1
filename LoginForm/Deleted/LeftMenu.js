@@ -6,7 +6,7 @@ function LeftMenu(){
     <div className="LeftMenu">
         <h1>Tipico Retail Franchisee Portal</h1>
         <h2>Logged in as: <span className="username">admin</span></h2>
-        <h3>Tipico Kundennr.: 13408</h3>
+        <h4>Tipico Kundennr.: 13408</h4>
         <button className="b2">Home</button>
         <button className="b2">Eigene Standorte</button>
         <button className="b2">Unterlagen Parter</button>
