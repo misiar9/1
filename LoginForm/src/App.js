@@ -4,7 +4,8 @@ import LoginForm from './component/LoginForm';
 import WelcomePage from './LeftMenu'
 import tipico from './component/img/tipico.jpg';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
-import {routes} from './routes'
+import {routes} from './routes.ts';
+import HomePage from './component/HomePage';
 
 function App() {
   const adminUser = {
@@ -40,7 +41,9 @@ function App() {
       <Switch>
       {(user.name != "") ? (
         <Route path={routes.WelcomePage} render={()=><WelcomePage user={user.name} logout={Logout} />} />
-      ) : (<LoginForm Login={Login} error={error} />)}
+      ) : (<LoginForm Login={Login} error={error} />)},
+        <Route path={routes.HomePage} render={()=><HomePage />} />
+        <Redirect to={routes.WelcomePage} />
     </Switch>
     </div>
   );
