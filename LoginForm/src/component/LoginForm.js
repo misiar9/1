@@ -14,7 +14,7 @@ function LoginForm({ Login, error }) {
             <div className="form-inner">
                 <h3>Tipico Retail Franchisee Portal</h3>
                 <img src={tipico} width="500px"></img>
-                {/* ERROR! */}
+                {(error !="") ? (<div className="error">{error}</div>) : ""}
                 <div className="form-group">
                     <input type="text" name="name" id="name" onChange={e => setDetails({...details, name: e.target.value })} value={details.name} />
                 </div>

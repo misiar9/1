@@ -3,6 +3,8 @@ import './App.css';
 import LoginForm from './component/LoginForm';
 import WelcomePage from './LeftMenu'
 import tipico from './component/img/tipico.jpg';
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
+import {routes} from './routes'
 
 function App() {
   const adminUser = {
@@ -23,7 +25,8 @@ function App() {
      }
     else
     {
-      console.log("Incorrect username or password")
+      console.log("Incorrect username or password");
+      setError("⚠️Incorrect username or password⚠️");
     }
 
   }
@@ -34,9 +37,11 @@ function App() {
 
   return (
     <div className="App">
+      <Switch>
       {(user.name != "") ? (
-        <WelcomePage user={user.name} logout={Logout} />
+        <Route path={routes.WelcomePage} render={()=><WelcomePage user={user.name} logout={Logout} />} />
       ) : (<LoginForm Login={Login} error={error} />)}
+    </Switch>
     </div>
   );
 }
