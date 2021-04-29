@@ -1,11 +1,11 @@
-body {
-  background-color:#C7102E;
+body{
+  background-color: white;
 }
 .welcome{
-  background-color:#C7102E;
+  background-color:white;
   text-align: center;
   font-family:Verdana;
-  color:white;
+  color:blue;
   }
   .b1{
     width:100px;

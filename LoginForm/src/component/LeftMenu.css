@@ -1,15 +1,50 @@
 .LeftMenu{
-    display:flex;
     float:left;
-    height:100vh;
-    width:200px;
-    text-align:left;
+    width:500px;
+    height:1500px;
+    text-align:center;
+    background-color: #C7102E;
 
 }
-.b2{
-    width:200px;
-    background-color: blue;
-    border:none;
-    outline:none;
+h1{
+    margin-top:10px;
+    padding-top:0;
     color:white;
+    font-family:sans-serif;
+    margin-bottom: 10%;
+    font-size:40px;
+    text-align: right;
+    padding-right:50px;
+}
+h2{
+    color:white;
+    font-size:20px;
+    text-align: right;
+    padding-right:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color:white;
+    font-size:15px;
+    text-align: right;
+    padding-right:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.b2{
+    width:400px;
+    border:none;
+    background: none;
+    color:white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    height:100px;
+    border-top:2px solid red;
+    border-bottom:2px solid red;
+    text-align:right;
+}
+.b2:hover{
+    background-color: white;
+    color:red;
+    font-size:30px;
 }

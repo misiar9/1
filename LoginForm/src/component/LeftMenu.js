@@ -1,12 +1,17 @@
 import React from 'react';
+import './LeftMenu.css';
 
 function LeftMenu(){
     return(
     <div className="LeftMenu">
-        <button className="b2">1</button>
-        <button className="b2">2</button>
-        <button className="b2">3</button>
-        <button className="b2">4</button>
+        <h1>Tipico Retail Franchisee Portal</h1>
+        <h2>Logged in as: <span className="username">admin</span></h2>
+        <h3>Tipico Kundennr.: 13408</h3>
+        <button className="b2">Home</button>
+        <button className="b2">Eigene Standorte</button>
+        <button className="b2">Unterlagen Parter</button>
+        <button className="b2">Veranderungsmitteilung</button>
+        <button className="b2">Logout</button>
     </div>
     );
 }

@@ -1,8 +1,16 @@
+body{
+    background-color:#C7102E;
+    margin:0 auto;
+    padding:0 auto;
+}
 .form-inner{
     background-color:#C7102E;
     text-align: center;
     font-size: 25px;
     font-family:Verdana;
+    height:100vh;
+    margin-top:0px;
+    padding-top:0px;
 }
 h3{
     color:white;
