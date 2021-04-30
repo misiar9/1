@@ -4,49 +4,18 @@ import LoginForm from './component/LoginForm';
 import WelcomePage from './LeftMenu'
 import tipico from './component/img/tipico.jpg';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
-import {routes} from './routes.ts';
+import { routes } from './routes.ts';
 import HomePage from './component/HomePage';
+import LoginPage from './component/LoginPage';
 
-function App() {
-  const adminUser = {
-    name: "admin",
-    password: "admin"
-  }
-
-  const [user, setUser] = useState({ name: "", email: "" });
-  const [error, setError] = useState("");
-
-  const Login = details => {
-    console.log(details);
-
-    if (details.name == adminUser.name && details.password == adminUser.password)
-     { 
-       console.log("Logged in!");
-       setUser({name: details.name});
-     }
-    else
-    {
-      console.log("Incorrect username or password");
-      setError("⚠️Incorrect username or password⚠️");
-    }
-
-  }
-  const Logout = () => {
-    console.log("Logout");
-    setUser({name:""});
-  }
-
+export function App() {
   return (
     <div className="App">
       <Switch>
-      {(user.name != "") ? (
-        <Route path={routes.WelcomePage} render={()=><WelcomePage user={user.name} logout={Logout} />} />
-      ) : (<LoginForm Login={Login} error={error} />)},
-        <Route path={routes.HomePage} render={()=><HomePage />} />
-        <Redirect to={routes.WelcomePage} />
-    </Switch>
+        <Route path={routes.LoginPage} render={() => <LoginPage />} />
+      </Switch>
     </div>
-  );
+  )
 }
 
 export default App;

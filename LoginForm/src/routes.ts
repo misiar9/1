@@ -1,4 +1,5 @@
 export const routes = {
-  WelcomePage: './LeftMenu',
+  LeftMenu: './LeftMenu',
+  HomePage: './component/HomePage'
 
 };
