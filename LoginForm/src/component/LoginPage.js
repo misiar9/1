@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './LoginPage.css';
-import LoginForm from './component/LoginForm';
-import WelcomePage from './LeftMenu'
-import tipico from './component/img/tipico.jpg';
+import LoginForm from './LoginForm';
+import WelcomePage from '../LeftMenu'
+import tipico from './img/tipico.jpg';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
-import { routes } from './routes.ts';
-import HomePage from './component/HomePage';
+import { routes } from '../routes.ts';
+import HomePage from './HomePage';
 
 function LoginPage() {
   const adminUser = {

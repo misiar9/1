@@ -13,9 +13,11 @@ export function App() {
     <div className="App">
       <Switch>
         <Route path={routes.LoginPage} render={() => <LoginPage />} />
+        <Route path={routes.HomePage} render={()=> <HomePage />} />
+        <Redirect to={routes.LoginPage} />
       </Switch>
     </div>
   )
 }
 
-export default App;
+export default withRouter(App);
