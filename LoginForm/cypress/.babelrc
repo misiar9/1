@@ -1,0 +1,51 @@
+{
+  "plugins": [
+    "styled-components",
+    "transform-decorators"
+  ],
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "> 0.5% in BR",
+            "iOS >= 9.3"
+          ]
+        },
+        "useBuiltIns": "entry"
+      }
+    ],
+    "@babel/react",
+    "stage-0"
+  ],
+  "@babel/env": {
+    "development": {
+      "plugins": [
+        "babel-plugin-styled-components"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-@babel/react-remove-prop-types",
+        "transform-@babel/react-constant-elements",
+        "transform-@babel/react-inline-elements",
+        "syntax-dynamic-import"
+      ]
+    },
+    "test": {
+      "presets": [
+        "@babel/env",
+        "@babel/react"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-class-properties",
+        "dynamic-import-node",
+        "syntax-dynamic-import"
+      ]
+    }
+  }
+}
