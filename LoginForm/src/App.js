@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import LoginForm from './component/LoginForm';
-import WelcomePage from './LeftMenu'
-import tipico from './component/img/tipico.jpg';
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom';
 import { routes } from './routes.ts';
 import HomePage from './component/HomePage';

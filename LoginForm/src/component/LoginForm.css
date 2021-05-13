@@ -20,10 +20,7 @@
     text-align: center;
     justify-content: center;
     margin-left:760px;
-    -webkit-animation: rainbow 5s ease infinite;
-    -z-animation: rainbow 5s ease infinite;
-    -o-animation: rainbow 5s ease infinite;
-      animation: rainbow 5s ease infinite;
+    animation: rainbow 5s ease infinite;
     }
 
 
